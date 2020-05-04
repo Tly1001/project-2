@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-function App() {
+import Home from './components/common/Home'
+import Error from './components/common/Error'
+import DinderRandom from './components/dinder/DinderRandom'
+import DinderMatch from './components/dinder/DinderMatch'
+import DinderIngredientRandom from './components/dinder/DinderIngredientRandom'
+
+// import Modal from './components/common/Modal'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Switch>
+        <Route exact path ="/" component={Home} />
+        <Route path="/dinder/ingredient" component={DinderIngredientRandom} />
+        <Route path="/dinder/:id" component={DinderMatch} />
+        <Route path="/dinder" component={DinderRandom} />
+        <Route path="/*" component={Error} />
+      </Switch>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App

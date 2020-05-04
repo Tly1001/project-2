@@ -1,68 +1,111 @@
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) GA London React Template
+
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #2: Reacathon
+
+## Overview
+
+The second project is to **build a React application** that consumes a **public API**.
+
+### Technical Requirements
+
+Your app must:
+
+* **Consume a public API** – this could be anything but it must make sense for your project.
+* **Have several components** - At least one classical and one functional.
+* **The app can have a router** - with several "pages", this is up to your disgression and if it makes sense for your project.
+* **Include wireframes** - that you designed before building the app.
+* **Be deployed online** and accessible to the public.
+
+---
+
+## Necessary Deliverables
+
+* A **working application**, hosted somewhere on the internet
+* A **link to your hosted working app** in the URL section of your Github repo
+* A **git repository hosted on Github**, with a link to your hosted project, and frequent commits dating back to the _very beginning_ of the project
+* **A `readme.md` file** with:
+  * Explanations of the **technologies** used
+    * A couple of paragraphs about the **general approach you took**
+    * **Installation instructions** for any dependencies
+    * Link to your **wireframes** – sketches of major views / interfaces in your application
+   * Descriptions of any **unsolved problems** or **major hurdles** your team had to overcome
+
+---
+
+## Suggested Ways to Get Started
+
+* **Don’t hesitate to write throwaway code** to solve short term problems.
+* **Read the docs for whatever technologies / frameworks / APIs you use**.
+* **Write DRY code**.
+* **Be consistent with your code style.**
+* **Commit early, commit often.** Don’t be afraid to break something because you can always go back in time to a previous version.
+* **Keep user stories small and well-defined**, and remember – user stories focus on what a user needs, not what development tasks need accomplishing.
+* **Write code another developer wouldn't have to ask you about**. Do your naming conventions make sense? Would another developer be able to look at your app and understand what everything is?
+* **Make it all well-formatted.** Are you indenting, consistently? Can we find the start and end of every div, curly brace, etc?
+* **Comment your code.** Will someone understand what is going on in each block or function? Even if it's obvious, explaining the what & why means someone else can pick it up and get it.
+* **Write pseudocode before you write actual code.** Thinking through the logic of something helps.
+
+---
+
+## Useful Resources
+
+* **[React](https://reactjs.org/)**
+* **[Some free APIs](https://apilist.fun/)**
+* **[Some more free APIs](https://github.com/public-apis/public-apis)**
+* **[Even more free APIs](https://dev.to/camerenisonfire/10-intriguing-public-rest-apis-for-your-next-project-2gbd)**
+* **[The best free API Finder](https://www.google.com)**
+
+`yarn start` to run the development server
+
+`yarn build` to create a build directory
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Dinder requirements
 
-In the project directory, you can run:
+### Pages
 
-### `yarn start`
+Home Page - front end URL - '/'
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+DinderRandom - Front end URL - '/dinder'
+             - Back end - GET RANDOM RECIPE
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+DinderMatch - Front end URL - '/dinder/:id
+            - Back end URL - GET SINGLE RECIPE BY ID
 
-### `yarn test`
+Options - (navbar burger style with form on open) - This has Category option & main ingredient option which then filters the get random page by this data inputted by the user
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Error - when a user navigates to an incorrect page
 
-### `yarn build`
+## Nice to haves:
+Log in page - 
+Favourites page - for logged in user
+Categories Drop-down
+Animation for swiping
+change tab logo include dinder logo
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Dependancies
+react-router-dom
+Bulma
+axios
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## to do:
+nav bar:
+- logo DONE
+- burger location DONE
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+home:
+- home page start button DONE
 
-### `yarn eject`
+random:
+- style polaroid
+  - font - montserrat
+  - layered pictures fx
+  - onload, hover and press buttons animation
+  - polaroid swipe animation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+match page:
+- styling
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

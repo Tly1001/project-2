@@ -41,7 +41,7 @@ axios
 
 <img src="https://imgur.com/r71gXD8.jpg">
 
-***Random dish page***
+### Random dish page
 * ***Logo*** - takes you back to hero page
 * ***Heart button*** - shows dish recipe
 * ***Cross button*** - shows a new dish
@@ -49,15 +49,25 @@ axios
 
 <img src="https://imgur.com/axNd9hd.jpg">
 
-***Dish details***
+### Dish details
+* ***Cross button*** - redirects to random dish page
+* ***Star button*** - saves recipe to favourites(no functionality)
 
 <img src="https://imgur.com/hAnslLr.jpg">
 
+### Ingredient search instructions
+
 <img src="https://imgur.com/vSNfDUJ.jpg">
+
+### Ingredient search
 
 <img src="https://imgur.com/VgOqxgG.jpg">
 
+### Random ingredient search dish
+
 <img src="https://imgur.com/JqRcoCq.jpg">
+
+### Ingredient search recipe
 
 <img src="https://imgur.com/UhDqLTa.jpg">
 

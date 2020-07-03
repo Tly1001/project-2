@@ -16,6 +16,11 @@ Your app must:
 
 ---
 
+### Dependancies
+React-router-dom
+Bulma
+axios
+
 ## Necessary Deliverables
 
 * A **working application**, hosted somewhere on the internet
@@ -30,13 +35,47 @@ Your app must:
 
 ---
 
-First I started creating the overall wireframe for the pages built in Figma. With a design reference already in mind it was a lot easier than creating my own from scratch. 
+## Walk-Through
+
+### Hero Page
+
+<img src="https://imgur.com/r71gXD8.jpg">
+
+***Random dish page***
+* ***Logo*** - takes you back to hero page
+* ***Heart button*** - shows dish recipe
+* ***Cross button*** - shows a new dish
+* ***Corner cheeseburger*** - takes you to ingredient search
+
+<img src="https://imgur.com/axNd9hd.jpg">
+
+***Dish details***
+
+<img src="https://imgur.com/hAnslLr.jpg">
+
+<img src="https://imgur.com/vSNfDUJ.jpg">
+
+<img src="https://imgur.com/VgOqxgG.jpg">
+
+<img src="https://imgur.com/JqRcoCq.jpg">
+
+<img src="https://imgur.com/UhDqLTa.jpg">
+
+---
+
+## Process
+
+Before we started I created the overall wireframe for the pages built in Figma. For this project I wanted to give a clear outline of what the end product would be, so that the instructors would have a thorough grasp of what we were trying to achieve and to save time when it came to the styling phase.
+
+With a design reference already in mind it was a lot easier than creating my own from scratch. 
 
 <img src="https://imgur.com/Cm3pUA2.jpg">
 
-Next was adding relationships to the pages to further understand how each page would communicate with each other. For this project I wanted to give a clear outline of what the end product would be, so that the instructors would have a thorough grasp of what we were trying to achieve and to save time when it came to the styling phase. 
+Next was adding relationships to the pages, to further understand how each page would communicate with each other. 
 
 <img src="https://imgur.com/qGgIl8q.jpg">
+
+
 
 ### Pages
 
@@ -52,34 +91,21 @@ Options - (navbar burger style with form on open) - This has Category option & m
 
 Error - when a user navigates to an incorrect page
 
-## Nice to haves:
-Log in page - 
+## Wins and Blockers
+
+---
+
+## Future Features
+
+Log in page
 Favourites page - for logged in user
 Categories Drop-down
 Animation for swiping
-change tab logo include dinder logo
 
-### Dependancies
-react-router-dom
-Bulma
-axios
+---
 
-## to do:
-nav bar:
-- logo DONE
-- burger location DONE
+## Key Lessons Learnt
 
-home:
-- home page start button DONE
 
-random:
-- style polaroid
-  - font - montserrat
-  - layered pictures fx
-  - onload, hover and press buttons animation
-  - polaroid swipe animation
-
-match page:
-- styling
 
 

@@ -23,8 +23,9 @@ We decided to create food recipe app due to me and my partners' shared interest 
 
 ## Functionality
 
-* Browse random dishes
-* Get the recipe of the dish they liked
+* Browse random dishes.
+* Get the recipe of the dish they liked.
+* Search for dishes that include a certain ingredient.
 
 ## Technologies Used
 * JSX
@@ -46,16 +47,16 @@ We decided to create food recipe app due to me and my partners' shared interest 
 <img src="https://imgur.com/r71gXD8.jpg">
 
 ### Random dish page
-* ***Logo*** - redirects back to hero page
-* ***Heart button*** - shows dish recipe
-* ***Cross button*** - shows a new dish
-* ***Corner cheeseburger*** - directs to ingredient search
+* ***Logo*** - redirects back to hero page.
+* ***Heart button*** - shows dish recipe.
+* ***Cross button*** - shows a new dish.
+* ***Corner cheeseburger*** - directs to ingredient search.
 
 <img src="https://imgur.com/axNd9hd.jpg">
 
 ### Dish details
-* ***Cross button*** - redirects to random dish page
-* ***Star button*** - saves recipe to favourites(no functionality)
+* ***Cross button*** - redirects to random dish page.
+* ***Star button*** - saves recipe to favourites(no functionality).
 
 <img src="https://imgur.com/hAnslLr.jpg">
 
@@ -150,10 +151,10 @@ A big win was how nice we got the pages to look, especially the recipe show page
 
 ## Future Features
 
-* Register/Log in page
-* Favourites page - for logged in user
-* Categories Drop-down
-* Animation for swiping
+* Register/Log in page.
+* Favourites page - for logged in user.
+* Categories Drop-down.
+* Animation for swiping.
 
 ---
 

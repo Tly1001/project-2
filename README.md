@@ -19,7 +19,12 @@ Brief:
 
 ## Concept
 
-We decided to create food recipe app due to me and my partners' shared interest in cooking, with tinder in mind as a design inspiration. Users would be able to quickly jump on, and browse through food ideas until they found one they liked the look of and with a click the recipe for it would be shown.
+We decided to create food recipe app due to me and my partners' shared interest in cooking, with tinder in mind as a design inspiration.
+
+## Functionality
+
+* Browse random dishes
+* Get the recipe of the dish they liked
 
 ## Technologies Used
 * JSX

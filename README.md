@@ -1,5 +1,3 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) GA London React Template
-
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #2: Reacathon
 
 ## Overview
@@ -32,7 +30,13 @@ Your app must:
 
 ---
 
+First I started creating the overall wireframe for the pages built in Figma. With a design reference already in mind it was a lot easier than creating my own from scratch. 
+
 <img src="https://imgur.com/Cm3pUA2.jpg">
+
+Next was adding relationships to the pages to further understand how each page would communicate with each other. For this project I wanted to give a clear outline of what the end product would be, so that the instructors would have a thorough grasp of what we were trying to achieve and to save time when it came to the styling phase. 
+
+<img src="https://imgur.com/qGgIl8q.jpg">
 
 ### Pages
 

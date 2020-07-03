@@ -1,13 +1,14 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #2: Reacathon
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) General Assembly Project #2: Dinder (Paired project)
 
-## Overview
+<a href="https://dinder-for-recipes.netlify.app/">Deployed Link<a/>
 
 The second project is to **build a React application** that consumes a **public API**.
 
 ### Technical Requirements
 
-Your app must:
+Brief:
 
+* **Time given** - 36 Hours.
 * **Consume a public API** – this could be anything but it must make sense for your project.
 * **Have several components** - At least one classical and one functional.
 * **The app can have a router** - with several "pages", this is up to your disgression and if it makes sense for your project.
@@ -16,22 +17,20 @@ Your app must:
 
 ---
 
-### Dependancies
-React-router-dom
-Bulma
-axios
+## Concept
 
-## Necessary Deliverables
+We decided to create food recipe app due to me and my partners' shared interest in cooking, with tinder in mind as a design inspiration. Users would be able to quickly jump on, and browse through food ideas until they found one they liked the look of and with a click the recipe for it would be shown.
 
-* A **working application**, hosted somewhere on the internet
-* A **link to your hosted working app** in the URL section of your Github repo
-* A **git repository hosted on Github**, with a link to your hosted project, and frequent commits dating back to the _very beginning_ of the project
-* **A `readme.md` file** with:
-  * Explanations of the **technologies** used
-    * A couple of paragraphs about the **general approach you took**
-    * **Installation instructions** for any dependencies
-    * Link to your **wireframes** – sketches of major views / interfaces in your application
-   * Descriptions of any **unsolved problems** or **major hurdles** your team had to overcome
+## Technologies Used
+* JSX
+* CSS
+* JavaScript
+* React.JS
+* React-router-dom
+* Axios
+* Bulma
+* Insomnia
+* Recipe API
 
 ---
 
@@ -42,10 +41,10 @@ axios
 <img src="https://imgur.com/r71gXD8.jpg">
 
 ### Random dish page
-* ***Logo*** - takes you back to hero page
+* ***Logo*** - redirects back to hero page
 * ***Heart button*** - shows dish recipe
 * ***Cross button*** - shows a new dish
-* ***Corner cheeseburger*** - takes you to ingredient search
+* ***Corner cheeseburger*** - directs to ingredient search
 
 <img src="https://imgur.com/axNd9hd.jpg">
 
@@ -63,7 +62,7 @@ axios
 
 <img src="https://imgur.com/VgOqxgG.jpg">
 
-### Random ingredient search dish
+### Random search with ingredient
 
 <img src="https://imgur.com/JqRcoCq.jpg">
 
@@ -73,9 +72,11 @@ axios
 
 ---
 
-## Process
+## Wireframe
 
-Before we started I created the overall wireframe for the pages built in Figma. For this project I wanted to give a clear outline of what the end product would be, so that the instructors would have a thorough grasp of what we were trying to achieve and to save time when it came to the styling phase.
+<a href="https://www.figma.com/file/Y1gbyc00bHPZqZpkZwb8Jd/Dinder?node-id=0%3A1">Figma link<a/>
+
+Before we started I created the overall wireframe for the pages built in ***Figma***. For this project I wanted to give a clear outline of what the end product would be, so that the instructors would have a thorough grasp of what we were trying to achieve and to save time when it came to the styling phase.
 
 With a design reference already in mind it was a lot easier than creating my own from scratch. 
 
@@ -85,36 +86,77 @@ Next was adding relationships to the pages, to further understand how each page 
 
 <img src="https://imgur.com/qGgIl8q.jpg">
 
+## Process
+
+1. We first started with me building the JSX of the random dish and recipe pages, whilst my partner worked on the get requests to the recipe API using a REST framework.
+
+2. From there I worked on extracting the data of the get requests for the created pages to be displayed, my partner moved onto styling with bulma in mind.
+
+3. At this point we were at MVP so I began working on the Hero page and promptly into joining my partner in styling the rest.
+
+4. We had about 5 hours of time left so we commited to working on one of our 'nice to haves' which was an ingredient search option.
+
+5. The last 2 hours were spent cleaning up code, final finishing touches for styling, and making small aninimation features for the home screen and buttons.
+
+---
+
+## Featured code
+
+### Ingredient/Measurement Listing
+
+This code I was particularly proud of because it put our progress to a halt trying to extract the data from the GET request and display it the way we wanted on the page. The ingredients and measurements were in 2 separate arrays which at first we thought of a very untidy way of doing so (explained in the wins and blockers section). This essentially extracts from 2 arrays, concatenates the respective items and places them into a new array.
+
+```
+const ingredientsList = []
+    const getIngredientsList = () => {
+      const ingredients = []
+      const measures = []
+      const array = Object.entries(this.state.meals.meals[0])
+      
+      array.map(key => {
+        if (key[0].search('Ingredient') > 0 && key[1]) {
+          ingredients.push(`${key[1]}`)
+        }
+        
+        if (key[0].search('Measure') > 0 && key[1]) {
+          measures.push(`${key[1]}`)
+        }
+      })
+      
+      for (let i = 0; i < ingredients.length - 1; i++) {
+        if (ingredients[i]) {
+          ingredientsList.push(`${ingredients[i]}: ${measures[i]}`)
+        }
+      }
+    }
+```
 
 
-### Pages
-
-Home Page - front end URL - '/'
-
-DinderRandom - Front end URL - '/dinder'
-             - Back end - GET RANDOM RECIPE
-
-DinderMatch - Front end URL - '/dinder/:id
-            - Back end URL - GET SINGLE RECIPE BY ID
-
-Options - (navbar burger style with form on open) - This has Category option & main ingredient option which then filters the get random page by this data inputted by the user
-
-Error - when a user navigates to an incorrect page
 
 ## Wins and Blockers
+
+The worst blocker we came across was once the recipes were fetched, extracting the array of ingredients and concatenating them with their respective measurements which was also in their own array became an issue. Due to the time constraint we eventually had to bite the bullet and hard code 40 separate variables (20 for ingredients, 20 for measurements) which I then looped through to show on the page. At the end I luckily had time to clean it up, removed the variables; replacing it with a map function which felt a lot less reptitive.
+
+Another issue that we came across was when the ingredient search cheeseburger was clicked whilst already in an ingredient search, the modal would not appear for it. This took quite some time to debug but I managed to solve this by adding a ternary statement that would check the url, which would then refresh the page if it was currently on the ingredient search page.
+
+A big win was how nice we got the pages to look, especially the recipe show pages on both desktop and mobile devices. This was my first time pair coding and was definitely a big learning experience which I was fully appreciative of.
 
 ---
 
 ## Future Features
 
-Log in page
-Favourites page - for logged in user
-Categories Drop-down
-Animation for swiping
+* Register/Log in page
+* Favourites page - for logged in user
+* Categories Drop-down
+* Animation for swiping
 
 ---
 
 ## Key Lessons Learnt
+
+The biggest lesson I learned is the importance of communication with your team. Being my first pair coding project we stumbled at first due to differences in coding style and thought process, but quickly landed on our feet and managed to pull off a big win in my books. I learned to not focus too much on clean code in the initial phase, but to get a working product first, then once everything is done to go back and do so.
+
+This was also a project for us to practice React.JS and GET requests which we had been learning over 4 days, which I felt a lot more confident with using having completed this project.
 
 
 

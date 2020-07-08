@@ -42,7 +42,7 @@ We decided to create food recipe app due to me and my partners' shared interest 
 
 ## Walk-Through
 
-### Hero Page
+### Home Page
 
 <img src="https://imgur.com/r71gXD8.jpg">
 

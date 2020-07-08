@@ -149,6 +149,14 @@ A big win was how nice we got the pages to look, especially the recipe show page
 
 ---
 
+## Bugs
+
+**Only shows dish name and image for random ingredient search**
+
+In the main random search the cuisine type is displayed, but not for the ingredient search. this was a limitation of the API we used. In order to get the cuisine type, we would have had to make another request similar to getting the whole recipe, extracting only the cuisine. Due to time constraints we decided against adding this.
+
+---
+
 ## Future Features
 
 * Register/Log in page.
@@ -163,7 +171,3 @@ A big win was how nice we got the pages to look, especially the recipe show page
 The biggest lesson I learned is the importance of communication with your team. Being my first pair coding project we stumbled at first due to differences in coding style and thought process, but quickly landed on our feet and managed to pull off a big win in my books. I learned to not focus too much on clean code in the initial phase, but to get a working product first, then once everything is done to go back and do so.
 
 This was also a project for us to practice React.JS and GET requests which we had been learning over 4 days, which I felt a lot more confident with using having completed this project.
-
-
-
-

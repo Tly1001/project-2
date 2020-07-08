@@ -141,7 +141,7 @@ const ingredientsList = []
 
 ## Wins and Blockers
 
-The worst blocker we came across was once the recipes were fetched, extracting the array of ingredients and concatenating them with their respective measurements which was also in their own array became an issue. Due to the time constraint we eventually had to bite the bullet and hard code 40 separate variables (20 for ingredients, 20 for measurements) which I then looped through to show on the page. At the end I luckily had time to clean it up, removed the variables; replacing it with a map function which felt a lot less reptitive.
+The worst blocker we came across was once the recipes were fetched, extracting the array of ingredients and concatenating them with their respective measurements which was also in their own array became an issue. Due to the time constraint we eventually had to bite the bullet and hard code 40 separate variables (20 for ingredients, 20 for measurements) which I then looped through to show on the page. At the end I luckily had time to clean it up, removed the variables; replacing it with a map function which felt a lot less repetitive.
 
 Another issue that we came across was when the ingredient search cheeseburger was clicked whilst already in an ingredient search, the modal would not appear for it. This took quite some time to debug but I managed to solve this by adding a ternary statement that would check the url, which would then refresh the page if it was currently on the ingredient search page.
 
